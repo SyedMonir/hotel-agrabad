@@ -2,37 +2,19 @@
   {
     "_id": "625489fa5e83ea3dacfd6e29",
     "picture": "http://agrabadhotel.com/en/wp-content/uploads/2015/10/royal-thumb.jpg",
-    "age": 30,
+    "price": 30,
     "name": "Royal Suite"
   },
   {
     "_id": "625489fabd097d5d28349cc9",
     "picture": "http://agrabadhotel.com/en/wp-content/uploads/2015/10/premier-thumb.jpg",
-    "age": 39,
+    "price": 39,
     "name": "Premier"
   },
   {
     "_id": "625489fa13b76b8c07ef2297",
     "picture": "http://agrabadhotel.com/en/wp-content/uploads/2015/10/executive-deluxe-thumb.jpg",
-    "age": 29,
+    "price": 29,
     "name": "Executive Deluxe"
-  },
-  {
-    "_id": "625489faaad6f898bc91ea58",
-    "picture": "http://agrabadhotel.com/en/wp-content/uploads/2016/07/gym-hs04.jpg",
-    "age": 29,
-    "name": "Active GYM"
-  },
-  {
-    "_id": "625489fa22109d4015d01d35",
-    "picture": "http://agrabadhotel.com/en/wp-content/uploads/2016/04/cinnamon-thumb.jpg",
-    "age": 38,
-    "name": "Cinnamon Restaurant"
-  },
-  {
-    "_id": "625489faac109d4015d01d35",
-    "picture": "http://agrabadhotel.com/en/wp-content/uploads/2016/05/ichiban-new-thumb.jpg",
-    "age": 38,
-    "name": "Ichiban Cuisine"
   }
 ]

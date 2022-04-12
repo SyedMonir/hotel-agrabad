@@ -38,7 +38,7 @@ const Header = () => {
         </Link>
       </div>
       <div className="navbar-end">
-        <div className="form-control">
+        <div className="form-control hidden sm:block ">
           <input
             type="text"
             placeholder="Search"
