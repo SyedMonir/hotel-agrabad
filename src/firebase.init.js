@@ -6,12 +6,12 @@ import getAuth from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyD71WEbnr2diQxM_6NXAI9u_tkDNTMk5ZI',
-  authDomain: 'hotel-agrabad.firebaseapp.com',
-  projectId: 'hotel-agrabad',
-  storageBucket: 'hotel-agrabad.appspot.com',
-  messagingSenderId: '249140523504',
-  appId: '1:249140523504:web:1b12f1d9f06e84f8a3ad35',
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase

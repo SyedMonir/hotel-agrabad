@@ -27,7 +27,10 @@ const Header = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link to={'home'}>Homepage</Link>
+              <Link to={'home'}>Home</Link>
+            </li>
+            <li>
+              <Link to={'/login'}>Login</Link>
             </li>
           </ul>
         </div>
