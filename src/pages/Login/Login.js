@@ -1,12 +1,16 @@
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import app from '../../firebase.init';
 
 const auth = getAuth(app);
 
 const Login = () => {
+  const [use, setUse] = useState({});
+  // console.log(use);
+  const location = useLocation();
+  const navigate = useNavigate();
   const handleSignIn = (event) => {
     event.preventDefault();
     const email = event.target.email.value;
@@ -15,7 +19,7 @@ const Login = () => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        console.log(user);
+        setUse(user);
         toast.success('Successfully Logged in!');
       })
       .catch((error) => {
@@ -23,6 +27,13 @@ const Login = () => {
         toast.error(errorMessage);
       });
   };
+
+  let from = location.state?.from?.pathname || '/';
+  useEffect(() => {
+    if (use.uid) {
+      navigate(from, { replace: true });
+    }
+  }, [from, navigate, use.uid]);
 
   return (
     <div className="hero min-h-screen bg-base-200">
