@@ -20,6 +20,7 @@ const Header = () => {
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {
+        setUsers({});
         toast.success('Sign-out successful.');
       })
       .catch((error) => {
@@ -108,9 +109,11 @@ const Header = () => {
               </li>
             ) : (
               <li>
-                <button className="btn btn-outline btn-error btn-sm">
-                  <Link to={'/login'}>Login</Link>
-                </button>
+                <Link to={'/login'}>
+                  <button className="btn btn-outline btn-error btn-sm w-full">
+                    Login
+                  </button>
+                </Link>
               </li>
             )}
           </ul>
